@@ -1,3 +1,4 @@
+$(document).on('ready', function() {
 
 // var names = {
 // 	firstName: "Luisa",
@@ -13,17 +14,19 @@
 
 // Exercise # 2
 
-	var allStrings = ['javascript', 'is', 'awesome'];
+	// var allStrings = ['javascript', 'is', 'awesome'];
 
-	var  totalLetters =function(array) { 
-		var temp = array.reduce(function(totals, arg){
+	// var  totalLetters = allStrings.reduce(function(totals, arg){
 			
-			return totals += arg.length;
-		}, 0);
-	//console.log("Total Length is " + totalLength);
+	// 		return totals += arg.length;
 
-	//totalLetters(to);
-	console.log("Total Length is " , totalLetters(allStrings));
+	// 	}, 0);
+
+	// console.log("total length", totalLetters);
+	// //console.log("Total Length is " + totalLength);
+
+	// //totalLetters(to);
+	// console.log("Total Length is " + totalLetters);
 
 // example # 3
 
@@ -74,10 +77,39 @@
 
 // example # 6
 
-// 
+
+
+// example # 7
+
+// var allStrings="Alabama";
+
+// var vowels = function(arg) {
+// 	//var itemsTomatch = /aeiou/g;
+// 	console.log(arg);
+// 	console.log("Here are all the vowels in " + arg + " " + arg.match(/[aeiouAEIOU]/ig));
+// };
+
+//  vowels(allStrings);
 
 
 
+// example # 8
+
+var allStrings = ['a','a','b','b', 'c', 'c'];
 
 
+	var twins = function(arg, arg1){
+		for (var i=0; i<arg.length; i++){
+			if (arg[i]  === arg[i+1]){
 
+
+			console.log(arg[i] + arg[i+1]);
+		} else {
+			return console.log("No!");
+		} //for
+	}
+
+	};
+	twins(allStrings, all);
+
+	});
